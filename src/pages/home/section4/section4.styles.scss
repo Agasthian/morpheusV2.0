@@ -1,0 +1,76 @@
+@import "../../../styles/main.scss";
+.section4Wrapper {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 100vh;
+
+  .section4_heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $color-primary;
+    margin-bottom: 3rem;
+  }
+
+  .servicesGrid {
+    grid-column: center-start / center-end;
+    margin: 5rem 0;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+    align-items: start;
+  }
+
+  .serviceCard {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 2rem;
+    align-items: start;
+
+    .service-icon {
+      font-size: 3rem;
+      color: $color-primary;
+      margin-bottom: 1rem;
+    }
+
+    .serviceText {
+      text-align: justify;
+      .serviceTitle {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #333;
+        margin-bottom: 0.5rem;
+      }
+
+      .serviceDescription {
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: #666;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .servicesGrid {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2-column layout on medium screens */
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .servicesGrid {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* 1-column layout on small screens */
+  }
+}

@@ -1,0 +1,72 @@
+@import "../../../styles/main.scss";
+.jobs {
+  text-align: center;
+  padding: 5rem 2rem;
+
+  background-color: $color-secondary-light;
+
+  &__heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+  }
+
+  &__grid {
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 7rem;
+
+    .jobCard {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      align-items: center;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 3.5rem;
+
+      img {
+        width: 100%;
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        z-index: 1;
+      }
+
+      &__title {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        justify-self: center;
+        align-self: end;
+        z-index: 3;
+        width: 80%;
+        background-color: $color-secondary-dark;
+        color: #ffffff;
+        font-size: 1.5rem;
+
+        font-weight: 400;
+        padding: 1.25rem;
+        text-align: center;
+        transform: translateY(50%);
+      }
+
+      &__info {
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        display: flex;
+        align-items: center;
+
+        .jobCard__icon {
+          fill: $color-primary;
+          width: 2rem;
+          height: 2rem;
+          margin-right: 1.5rem;
+        }
+      }
+
+      &__apply {
+        grid-column: 1/-1;
+      }
+    }
+  }
+}

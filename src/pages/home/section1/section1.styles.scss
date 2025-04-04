@@ -1,0 +1,40 @@
+// @import '../../../styles/main.scss';
+
+.section1Wrapper {
+  background-image: linear-gradient(
+      105deg,
+      rgba(16, 29, 44, 0.9) 0%,
+      rgba(16, 29, 44, 0.5) 50%,
+      transparent 50%
+    ),
+    url(../../../assets/home01.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .section1_content {
+    width: 40%;
+
+    color: #fff;
+    .section1_mainheading h1 {
+      font-size: 3.5rem;
+      font-weight: 600;
+    }
+    .section1_subheading h2 {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-top: 1.3rem;
+    }
+    .section1_actionButton {
+      margin-top: 2rem;
+    }
+  }
+}
