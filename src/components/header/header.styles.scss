@@ -9,7 +9,10 @@
   }
   .active {
     background-color: $color-secondary-dark;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
+  }
+  .active:hover {
+    color: $color-primary;
   }
 
   @include respond(phone-max) {
@@ -43,7 +46,7 @@
 
         li {
           list-style: none;
-          margin-right: 2rem;
+          margin-right: 4rem;
 
           a {
             font-weight: 600;
@@ -55,6 +58,51 @@
               transition: 0.2s ease-in;
             }
           }
+        }
+      }
+
+      //dropdown css
+      .dropdown {
+        position: relative;
+
+        span {
+          font-weight: 600;
+          font-size: 1.5rem;
+          cursor: pointer;
+          color: $color-light-grey;
+
+          &:hover {
+            color: $color-black;
+          }
+        }
+
+        .dropdown-menu {
+          position: absolute;
+          top: 2rem;
+          left: 0;
+          display: none;
+          flex-direction: column;
+          background-color: $color-primary;
+          padding: 2rem 0;
+          min-width: 25rem;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+          z-index: 1000;
+
+          li {
+            padding: 1rem 2rem;
+
+            a {
+              color: $color-light-grey;
+
+              &:hover {
+                color: $color-secondary-dark;
+              }
+            }
+          }
+        }
+
+        &:hover .dropdown-menu {
+          display: flex;
         }
       }
     }

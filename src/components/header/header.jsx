@@ -19,9 +19,20 @@ const Header = (props) => {
               <li>
                 <NavLink to="/">Home</NavLink>
               </li>
-              <li>
-                <NavLink to="/about">About</NavLink>
+              <li className="dropdown">
+                <span>About</span>
+                <ul className="dropdown-menu">
+                  <li>
+                    <NavLink to="/about/organization">
+                      About Organization
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/about/team">About the Team</NavLink>
+                  </li>
+                </ul>
               </li>
+
               <li>
                 <NavLink to="/service">Services</NavLink>
               </li>

@@ -1,0 +1,25 @@
+.abtOrg_wrapper {
+  margin: 5rem 0;
+  .abtOrg_section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    .abtOrg_section_left {
+      flex: 1;
+      margin-top: 2rem;
+      text-align: justify;
+      line-height: 2.2rem;
+    }
+    .abtOrg_section_right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 400px;
+      }
+    }
+  }
+  .abtOrg_section2 {
+    margin-top: 5rem;
+  }
+}
