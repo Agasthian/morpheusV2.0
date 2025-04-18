@@ -9,7 +9,19 @@ const AboutOrg = lazy(() =>
 );
 const AboutTeam = lazy(() => import("./pages/about/aboutTeam.component"));
 const Contact = lazy(() => import("./pages/contact/contact.component"));
-const Careers = lazy(() => import("./pages/careers/careers.components"));
+const JobSearch = lazy(() => import("./pages/careers/searchJob.components"));
+const SubmitResume = lazy(() =>
+  import("./pages/careers/submit-resume.component")
+);
+const ItConsultant = lazy(() =>
+  import("./pages/careers/jobs/itConsultant/itConsultant.component")
+);
+const DigitalMarketing = lazy(() =>
+  import("./pages/careers/jobs/digitalMarketing/digitalMarketing.component")
+);
+const DesignEngineer = lazy(() =>
+  import("./pages/careers/jobs/designEngineer/designEngineer.component")
+);
 const Services = lazy(() => import("./pages/services/services.components"));
 
 const App = (props) => {
@@ -21,7 +33,11 @@ const App = (props) => {
             <Route path="/" element={<Home />} />
             <Route path="/about/organization" element={<AboutOrg />} />
             <Route path="/about/team" element={<AboutTeam />} />
-            <Route path="/careers" element={<Careers />} />
+            <Route path="/search-job" element={<JobSearch />} />
+            <Route path="/it-consultant-manager" element={<ItConsultant />} />
+            <Route path="/digital-marketing" element={<DigitalMarketing />} />
+            <Route path="/design-engineer" element={<DesignEngineer />} />
+            <Route path="/submit-resume" element={<SubmitResume />} />
             <Route path="/service" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

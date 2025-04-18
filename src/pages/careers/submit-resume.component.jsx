@@ -3,15 +3,15 @@ import { Helmet } from "react-helmet";
 
 import Layout from "../../components/layout/layout";
 
-const Careers = () => {
+const SubmitResume = () => {
   return (
     <Layout>
       <Helmet>
         <title>MHConsultancy | Careers </title>
       </Helmet>
-      <h1>Careers page</h1>
+      <h1>Submit Resume page</h1>
     </Layout>
   );
 };
 
-export default Careers;
+export default SubmitResume;

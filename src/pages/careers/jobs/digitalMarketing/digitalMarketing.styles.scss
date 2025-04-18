@@ -1,0 +1,20 @@
+.digitalMarket_wrapper.container {
+  margin-bottom: 3rem;
+  a {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  .job-description {
+    display: flex;
+    justify-content: space-between;
+    .content {
+      ul {
+        margin-left: 2rem;
+        font-size: 1.8rem;
+        li {
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+}

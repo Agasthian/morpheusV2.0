@@ -1,0 +1,47 @@
+.job-form {
+  background: #fff;
+  border: 1px solid #dddfe3;
+  &_wrapper {
+    padding: 35px;
+    h2 {
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+      font-weight: 400;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 500px;
+      margin: 0 auto;
+
+      label {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #222;
+        text-align: left;
+      }
+
+      input,
+      textarea {
+        padding: 1rem 0rem;
+        font-size: 1.4rem;
+        border: none;
+        border-bottom: 1px solid #ccc;
+
+        background-color: #fff;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+          border-color: #0a66c2;
+          outline: none;
+        }
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 80px;
+      }
+    }
+  }
+}
