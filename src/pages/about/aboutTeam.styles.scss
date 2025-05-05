@@ -1,0 +1,24 @@
+.abtTeam {
+  margin: 5rem 0;
+  .team01,
+  .team02 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+
+    &_content {
+      flex: 2;
+      text-align: justify;
+      line-height: 2.1rem;
+    }
+    &_photo {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 310px;
+        max-height: 430px;
+      }
+    }
+  }
+}
