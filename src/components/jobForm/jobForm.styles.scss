@@ -20,11 +20,13 @@
         font-weight: 600;
         color: #222;
         text-align: left;
+        padding-top: 1.2rem;
+        line-height: 1rem;
       }
 
       input,
       textarea {
-        padding: 1rem 0rem;
+        padding-bottom: 1rem;
         font-size: 1.4rem;
         border: none;
         border-bottom: 1px solid #ccc;

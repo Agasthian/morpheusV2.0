@@ -1,0 +1,42 @@
+.submit-resume_wrapper {
+  margin-bottom: 3rem;
+  form {
+    border: 1px solid #dddfe3;
+    padding: 4rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 600px;
+    margin: 0 auto;
+
+    label {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #222;
+      text-align: left;
+      padding-top: 1.2rem;
+      line-height: 1rem;
+    }
+
+    input,
+    textarea {
+      padding-bottom: 1rem;
+      font-size: 1.4rem;
+      border: none;
+      border-bottom: 1px solid #ccc;
+
+      background-color: #fff;
+      transition: border-color 0.3s ease;
+
+      &:focus {
+        border-color: #0a66c2;
+        outline: none;
+      }
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+  }
+}
