@@ -84,42 +84,16 @@
       }
     }
   }
-}
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .section3Wrapper {
-    flex-direction: column-reverse; /* Stack content on smaller screens */
-    text-align: center;
-    padding: 3rem 5%;
-  }
-
-  .section3_image {
-    margin-bottom: 2rem;
-
-    img {
-      max-width: 100%;
-    }
-  }
-
-  .section3_content {
-    padding-right: 0;
-
-    .section3_bulletPoints {
-      align-items: center; /* Center bullet points */
-
-      .bulletPoint {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-
-        .icon {
-          margin-bottom: 0.5rem;
-        }
-
-        .bulletContent hr {
-          width: 50%; /* Shorter line on small screens */
-        }
+  @include respond(phone-max) {
+    .section3_flexWrapper {
+      flex-wrap: wrap;
+      .section3_content,
+      .section3_image {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 0; // Remove extra spacing for content
+        text-align: center; // Optional: center content text on mobile
       }
     }
   }

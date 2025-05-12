@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 import Layout from "../../components/layout/layout";
 import Team01 from "../../assets/team01.jpg";
-import Team02 from "../../assets/team02.jpg";
+import Team02 from "../../assets/team02.jpeg";
 import "./aboutTeam.styles.scss";
 
 const About = () => {
