@@ -16,9 +16,11 @@
   }
 
   @include respond(phone-max) {
-    background-color: $color-secondary-light;
     a {
       color: $color-black;
+    }
+    .active {
+      background-color: $color-primary;
     }
   }
 }
@@ -146,10 +148,14 @@
     &_MobileMenu {
       display: block;
 
+      .hamburger-icon {
+        font-size: 20px;
+      }
+
       &_mobile_list {
         position: absolute;
         z-index: 99999;
-        top: 7rem;
+        top: 9rem;
         right: 0;
         min-height: 200px;
         width: 100%;
@@ -157,12 +163,31 @@
         padding: 2rem;
         display: flex;
         justify-content: center;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+        overflow: hidden;
+
+        &.open {
+          transform: translateX(0%);
+          opacity: 1;
+        }
+
+        &.close {
+          transform: translateX(100%);
+          opacity: 0;
+        }
 
         ul {
           list-style: none;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
           li {
             font-size: 1.8rem;
             margin-bottom: 2rem;
+            margin-right: 2rem;
             font-weight: 700;
           }
         }

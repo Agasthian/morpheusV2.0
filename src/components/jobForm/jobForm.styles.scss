@@ -1,3 +1,5 @@
+@import "../../styles/main.scss";
+
 .job-form {
   background: #fff;
   border: 1px solid #dddfe3;
@@ -43,6 +45,14 @@
       textarea {
         resize: vertical;
         min-height: 80px;
+      }
+    }
+  }
+
+  @include respond(phone-max) {
+    &_wrapper {
+      form {
+        width: 100%;
       }
     }
   }
