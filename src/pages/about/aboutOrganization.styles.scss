@@ -1,5 +1,8 @@
+@import "../../styles/main.scss";
+
 .abtOrg_wrapper {
   margin: 5rem 0;
+
   .abtOrg_section {
     display: flex;
     flex-wrap: wrap;
@@ -21,5 +24,20 @@
   }
   .abtOrg_section2 {
     margin-top: 5rem;
+  }
+
+  @include respond(phone-max) {
+    width: 100%;
+    .abtOrg_section {
+      .abtOrg_section_left {
+        flex: 0 0 100%;
+      }
+      .abtOrg_section_right {
+        flex: 0 0 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
 }
