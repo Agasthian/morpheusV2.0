@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { SlMenu } from "react-icons/sl";
+import Logo from "../../assets/logo.png";
 
 import "./header.styles.scss";
 
@@ -12,7 +13,9 @@ const Header = (props) => {
       <div className="headerFlexBox">
         <div className="headerFlexBox_Logo">
           <h2>
-            <Link to="/">MH Consultancy</Link>
+            <Link to="/">
+              <img src={Logo} alt="mh logo" />
+            </Link>
           </h2>
         </div>
 

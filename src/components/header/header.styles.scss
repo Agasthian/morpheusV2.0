@@ -16,6 +16,7 @@
   }
 
   @include respond(phone-max) {
+    height: 11rem;
     a {
       color: $color-black;
     }
@@ -34,6 +35,14 @@
   padding: 0 8rem;
 
   &_Logo {
+    img {
+      width: 90px;
+    }
+    @include respond(phone-max) {
+      img {
+        width: 80px;
+      }
+    }
   }
 
   &_DesktopMenu {
