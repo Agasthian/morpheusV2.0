@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { FaCheckCircle } from "react-icons/fa";
 
 import Layout from "../../components/layout/layout";
-import section1Img from "../../assets/contact02.jpg";
+import section1Img from "../../assets/about02.jpg";
 import "./aboutOrganization.styles.scss";
 
 const About = () => {

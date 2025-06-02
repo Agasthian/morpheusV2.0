@@ -3,7 +3,7 @@
 .headerWrapper {
   background-color: $color-primary;
   width: 100%;
-  height: 9rem;
+  height: 11rem;
   a {
     color: $color-light-grey;
   }
@@ -16,7 +16,6 @@
   }
 
   @include respond(phone-max) {
-    height: 11rem;
     a {
       color: $color-black;
     }
@@ -36,7 +35,7 @@
 
   &_Logo {
     img {
-      width: 90px;
+      width: 110px;
     }
     @include respond(phone-max) {
       img {

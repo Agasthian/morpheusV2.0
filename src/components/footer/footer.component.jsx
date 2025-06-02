@@ -12,10 +12,10 @@ const FooterNew = () => {
           <div className="footerItem">
             <div className="heading">Company</div>
             <p className="footerText">
-              Morpheus Hunt Consulting pvt ltd, <br />
-              Suite 1E,ELCANSO Complex,
+              Morpheus Hunt Consulting Pvt Ltd, <br />
+              Suite 1E, ELCANSO Complex,
               <br />
-              No:10 casa major road,
+              No:10 Casa Major Road,
               <br />
               Egmore, Chennai 600008, <br />
               India
